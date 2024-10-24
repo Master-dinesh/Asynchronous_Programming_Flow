@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Async/Await</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-200 flex justify-center items-center min-h-screen">
+
+<!-- Container Box -->
+<div class="bg-white p-10 rounded-lg shadow-lg w-2/3 max-w-lg">
+    <h1 class="text-center text-xl mb-4">Async/Await</h1>
+    <div id="asyncOutput" class="text-center mb-4">Click "Click Me" to fetch data!</div>
+
+    <!-- Buttons -->
+    <div class="flex justify-around">
+    <button class="bg-gray-400 text-white px-4 py-2 rounded" id="backBtn" onclick="goToPromisePage()">Back</button>
+    <button class="bg-purple-500 text-white px-4 py-2 rounded" id="asyncBtn">Click Me</button>
+    <button class="bg-red-500 text-white px-4 py-2 rounded" id="stopBtn" onclick="stopProcess()">Stop</button>
+    </div>
+</div>
+
+<script src="./js/async-await.js"></script>
+</body>
+</html>

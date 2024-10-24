@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Programming Flow</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: red !important;
+            color: #F7FAFC;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .btn {
+            margin: 1rem;
+            padding: 1rem 2rem;
+            background-color: #2B6CB0;
+            color: white;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: black;
+        }
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+    
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+    
+            @keyframes colorChange {
+                0% {
+                    color: darkorchid;
+                }
+                33% {
+                    color: deeppink;
+                }
+                66% {
+                    color: darkblue
+                }
+                100% {
+                    color: darkturquoise;
+                }
+            }
+    
+            h1 {
+                animation: rotate 2s ease-in-out, blink 1s step-start infinite, colorChange 3s linear infinite;
+            }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Asynchronous Programming Flow</h1>
+        <button class="btn" onclick="startFlow()">Start the Flow</button>
+    </div>
+    
+    <script>
+        function startFlow() {
+            window.location.href = 'callbacks.html';
+        }
+    </script>
+</body>
+</html>
